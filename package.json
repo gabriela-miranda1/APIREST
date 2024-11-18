@@ -1,0 +1,32 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint -c eslint.config.mjs --ignore-pattern .gitignore .",
+    "style-check": "prettier --ignore-path .gitignore --check .",
+    "style-fix": "prettier --ignore-path .gitignore --write .",
+    "start": "node -r dotenv/config app.js",
+    "dev": "nodemon -r dotenv/config app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.4",
+    "sequelize": "^6.37.5"
+  }
+}
